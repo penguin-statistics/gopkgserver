@@ -12,7 +12,7 @@ const (
 	HtmlContent = `<html>
   <head>
     <meta name="go-import" content="exusiai.dev/{{ .pkg }} git https://github.com/penguin-statistics/{{ .pkg }}.git">
-	<meta http-equiv="refresh" content="0; url=https://pkg.go.dev/exusiai.dev/{{ .pkg }}">
+    <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/exusiai.dev/{{ .pkg }}">
   </head>
 </html>`
 )
