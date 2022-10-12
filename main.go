@@ -11,7 +11,7 @@ import (
 const (
 	HtmlContent = `<html>
   <head>
-    <meta name="go-import" content="github.com/penguin-statistics/{{ .pkg }} git https://github.com/penguin-statistics/{{ .pkg }}.git">
+    <meta name="go-import" content="exusiai.dev/{{ .pkg }} git https://github.com/penguin-statistics/{{ .pkg }}.git">
   </head>
 </html>`
 )
