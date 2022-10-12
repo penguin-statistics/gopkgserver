@@ -37,6 +37,14 @@ func main() {
 			return c.SendStatus(fiber.StatusBadRequest)
 		}
 
+		c.Set("Content-Type", "text/html; charset=utf-8")
+		c.Set("Cache-Control", "public, max-age=86400")
+		c.Set("Vary", "Accept-Encoding")
+		c.Set("Content-Security-Policy", "default-src 'none'; sandbox") // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/sandbox
+		c.Set("X-Content-Type-Options", "nosniff")
+		c.Set("X-Frame-Options", "DENY")
+		c.Set("X-XSS-Protection", "1; mode=block")
+
 		return tmpl.Execute(c, fiber.Map{
 			"pkg": pkg,
 		})
