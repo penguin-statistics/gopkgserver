@@ -27,6 +27,8 @@ github.com/gofiber/helmet/v2 v2.2.22 h1:kACyVKnu3RpBmr0IomxwxwFzTLJuWllRCA5DQEmi
 github.com/gofiber/helmet/v2 v2.2.22/go.mod h1:8eDCsQ6XV+Ye41c+vQKyPQdG6NW9iQhlgdnwRIvp01M=
 github.com/gofiber/helmet/v2 v2.2.23 h1:hEastMbezQwbqJgSIFvgtx/lmb51bqi6T6GW/SBhiwo=
 github.com/gofiber/helmet/v2 v2.2.23/go.mod h1:wqmrFiOYWkoOXtsf4OOdNVUABkjCvwJi9AU8xa/7SAA=
+github.com/gofiber/helmet/v2 v2.2.24 h1:5Qo5kjKmC8yJFp8sB22k7fUkW3kjyp5eB38jYVlyDPQ=
+github.com/gofiber/helmet/v2 v2.2.24/go.mod h1:ADBSCgEBgnswL846Gwr06CLlT+ZpTsXpKi4P4o/pPVk=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/klauspost/compress v1.15.0 h1:xqfchp4whNFxn5A4XFyyYtitiWI8Hy5EW59jEwcyL6U=
