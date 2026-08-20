@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
+	github.com/go-ozzo/ozzo-validation/v4 v4.4.1
 	github.com/gofiber/fiber/v2 v2.50.0
 	github.com/gofiber/helmet/v2 v2.2.26
 )
