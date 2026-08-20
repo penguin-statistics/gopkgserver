@@ -3,7 +3,7 @@ module github.com/penguin-statistics/gopkgserver
 go 1.19
 
 require (
-	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
+	github.com/go-ozzo/ozzo-validation v3.8.1+incompatible
 	github.com/gofiber/fiber/v2 v2.50.0
 	github.com/gofiber/helmet/v2 v2.2.26
 )
