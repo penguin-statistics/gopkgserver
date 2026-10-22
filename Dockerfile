@@ -19,16 +19,17 @@ COPY go.sum ./
 RUN go mod download
 COPY . .
 
-# build the binary
-RUN go build -o gopkgserver .
+# build the binary (static, so the runtime image needs no Go toolchain or libc shims)
+RUN CGO_ENABLED=0 go build -trimpath -o gopkgserver .
 
-# runner
-FROM base AS runner
-RUN apk add --no-cache libc6-compat tini
+# runner: plain Alpine, no Go toolchain
+FROM alpine:3.24 AS runner
+WORKDIR /app
+RUN apk add --no-cache tini
 # Tini is now available at /sbin/tini
 
 COPY --from=builder /app/gopkgserver /app/gopkgserver
-EXPOSE 8080
+EXPOSE 3000
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD [ "/app/gopkgserver" ]
